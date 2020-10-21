@@ -22,3 +22,6 @@ p{
 .searchmatch{
     color: #bbff1c;
 }
+#result{
+    text-align: center;
+}
