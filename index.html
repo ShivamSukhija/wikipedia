@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+    <script src="https://kit.fontawesome.com/0a21f7e5d2.js" crossorigin="anonymous"></script>
+    <script src="wiki.js"></script>
+</head>
+<body>
+    <div id="center">Wikipedia</div>
+    <div id="center2"><button onClick="window.location.reload();" style="display: none;" id="back">Back to search</button></div>
+    <div id="search-container">
+        <form action="javascript:void(0);">
+          <input type="text" placeholder="Search..." name="search" id="searchbox">
+          <button type="button" onclick="qry()"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div id="result"></div>  
+</body>
+</html>
