@@ -10,8 +10,8 @@ fetch(url)
   .then(json => {
       if (json.query.searchinfo.totalhits == 0){
         var d= document.getElementById("result")
-        d.innerHTML="No results available"
-        exit()
+        d.innerHTML="No results available";
+        return;
       }
       var que=json.query.search;
       que.forEach(item => {
