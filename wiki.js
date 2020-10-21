@@ -8,6 +8,11 @@ console.log(url)
 fetch(url)
   .then(response => response.json())
   .then(json => {
+      if (json.query.searchinfo.totalhits == 0){
+        var d= document.getElementById("result")
+        d.innerHTML="No results available"
+        exit()
+      }
       var que=json.query.search;
       que.forEach(item => {
         //   document.write(item.title + "<br>")
